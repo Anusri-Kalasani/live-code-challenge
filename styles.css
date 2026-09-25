@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+/* Main Container */
+
+.container {
+    width: 480px;
+    min-height: 350px;
+
+    background: #f7f7f7;
+
+    padding: 28px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.7fr 1fr;
+
+    grid-template-rows: 110px 145px;
+
+    gap: 10px;
+}
+
+
+/* Common Card */
+
+.card {
+    border-radius: 5px;
+
+    padding: 14px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Create Card */
+
+.create {
+    background: #fce9db;
+
+    color: #222;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.create h3 {
+    font-size: 14px;
+
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+}
+
+
+.create h3 span {
+    color: #e95d39;
+
+    font-style: italic;
+}
+
+
+.btn {
+    width: fit-content;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #ff9b52;
+
+    color: white;
+
+    font-size: 8px;
+
+    font-weight: bold;
+}
+
+
+/* Hero Card */
+
+.hero {
+    background: #e85b38;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 20px;
+
+    line-height: 1.05;
+
+    margin-bottom: 8px;
+}
+
+
+.hero h1 span {
+    color: #ffe071;
+}
+
+
+.stars {
+    color: #ffd34e;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+.hero p {
+    font-size: 7px;
+}
+
+
+/* Schedule */
+
+.schedule {
+    background: #ddd1ff;
+
+    color: #222;
+}
+
+
+.schedule h3 {
+    font-size: 11px;
+
+    line-height: 1.1;
+}
+
+
+.chart {
+    height: 55px;
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-around;
+
+    margin-top: 12px;
+}
+
+
+.bar {
+    width: 9px;
+
+    background: #e85b38;
+
+    border-radius: 4px 4px 0 0;
+}
+
+
+.bar1 {
+    height: 25px;
+}
+
+
+.bar2 {
+    height: 35px;
+}
+
+
+.bar3 {
+    height: 50px;
+}
+
+
+.bar4 {
+    height: 30px;
+}
+
+
+.schedule p {
+    font-size: 7px;
+
+    margin-top: 5px;
+}
+
+
+/* AI Card */
+
+.ai {
+    background: #ffbd61;
+
+    color: #222;
+}
+
+
+.ai h3 {
+    font-size: 14px;
+
+    line-height: 1.1;
+
+    margin-bottom: 14px;
+}
+
+
+.phone {
+    background: white;
+
+    width: 70px;
+
+    height: 62px;
+
+    border-radius: 8px;
+
+    margin: auto;
+
+    padding: 8px;
+
+    font-size: 6px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+}
+
+
+.message {
+    background: #f3f0e9;
+
+    padding: 5px;
+
+    margin-bottom: 5px;
+
+    border-radius: 4px;
+}
+
+
+/* Features */
+
+.features {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+}
+
+
+.feature {
+    background: #f1f1f1;
+
+    border-radius: 5px;
+
+    padding: 12px;
+}
+
+
+.feature h4 {
+    font-size: 10px;
+
+    margin-bottom: 6px;
+}
+
+
+.feature p {
+    font-size: 7px;
+
+    color: #666;
+}
+
+
+/* Growth */
+
+.growth {
+    background: #f1f1f1;
+
+    padding: 12px;
+
+    border-radius: 5px;
+}
+
+
+.growth strong {
+    color: #e85b38;
+
+    font-size: 20px;
+}
+
+
+.growth p {
+    font-size: 7px;
+
+    margin-top: 3px;
+}
+
+
+/* Customer Card */
+
+.followers {
+    background: #e85b38;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.followers h2 {
+    font-size: 15px;
+
+    line-height: 1.1;
+}
+
+
+.followers h2 span {
+    color: #ffe071;
+}
+
+
+/* Customer Statistics */
+
+.followers-card {
+    position: absolute;
+
+    right: 10px;
+
+    bottom: 10px;
+
+    background: white;
+
+    color: #333;
+
+    width: 85px;
+
+    height: 62px;
+
+    border-radius: 7px;
+
+    padding: 8px;
+}
+
+
+.followers-card small {
+    font-size: 6px;
+}
+
+
+.followers-card strong {
+    display: block;
+
+    font-size: 13px;
+
+    color: #e85b38;
+
+    margin: 3px 0;
+}
+
+
+/* Small Chart */
+
+.mini-chart {
+    display: flex;
+
+    align-items: end;
+
+    height: 20px;
+
+    gap: 3px;
+}
+
+
+.mini-chart div {
+    width: 6px;
+
+    background: #ff9b52;
+
+    border-radius: 2px 2px 0 0;
+}
+
+
+.mini-chart div:nth-child(1) {
+    height: 8px;
+}
+
+
+.mini-chart div:nth-child(2) {
+    height: 13px;
+}
+
+
+.mini-chart div:nth-child(3) {
+    height: 17px;
+}
+
+
+.mini-chart div:nth-child(4) {
+    height: 20px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    body {
+        background: #f7f7f7;
+
+        align-items: flex-start;
+    }
+
+
+    .container {
+        width: 100%;
+
+        padding: 15px;
+
+        grid-template-columns: 1fr 1.5fr 1fr;
+
+        gap: 7px;
+    }
+}
+
+  
